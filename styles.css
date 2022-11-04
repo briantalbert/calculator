@@ -11,6 +11,7 @@
     border-radius: 5px;
     width: fit-content;
     justify-content: center;
+    background-color: darkgray;
     
 }
 
@@ -37,6 +38,7 @@ button {
     margin: 3px;
     width: 25px;
     height: 25px;
+    border-radius: 7px;
 }
 
 button.backspace {
