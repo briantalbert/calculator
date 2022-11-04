@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-color: black;
+    border-radius: 5px;
+    width: fit-content;
+    justify-content: center;
+    
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px;
+}
+
+.screen {
+    display: flex;
+    flex-basis: 75%;
+    justify-content: flex-end;
+    border: solid;
+    border-color: darkolivegreen;
+    border-radius: 5px;
+    background-color: olivedrab;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin: 3px;
+    width: 25px;
+    height: 25px;
+}
+
+button.backspace {
+    margin: 0;
+}
