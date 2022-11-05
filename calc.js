@@ -48,7 +48,7 @@ function addButtonEventListeners() {
                         op = '-'
                         break
                     case 'divide':
-                        op = '/'
+                        op = '÷'
                         break
                     case 'equals':
                         op = 'eq'
@@ -127,7 +127,7 @@ function operate() {
         case 'x':
             return a * b
             break;
-        case '/':
+        case '÷':
             result = ''
             b == 0 ? result = 'ERROR' : result = a/b
             return result
