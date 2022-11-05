@@ -1,7 +1,15 @@
+const maxLength = 10
 let operands = []
 let screen = document.querySelector('.screen')
+let history = document.querySelector('.history')
 
 addButtonEventListeners()
+
+function checkLength() {
+    while (screen.textContent.length > maxLength) {
+        screen.textContent = screen.textContent.slice(0, maxLength + 1)
+    }
+}
 
 function addButtonEventListeners() {
 
@@ -21,6 +29,7 @@ function addButtonEventListeners() {
                 } else {
                     if (num != '.' || (num == '.' && !screen.textContent.includes('.'))) {screen.textContent += num}
                 }
+
             })
         }
 
@@ -84,6 +93,7 @@ function addButtonEventListeners() {
                     operands.push(op)
                     if (op != 'eq') {screen.textContent += op}
                 }
+
             })
         }
 
@@ -104,6 +114,8 @@ function operate() {
     let a = +operands[0]
     let b = +operands[2]
     let op = operands[1]
+
+    history.textContent = `${a}${op}${b}=`
 
     switch (op) {
         case '+':
