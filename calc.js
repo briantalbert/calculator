@@ -101,6 +101,10 @@ function addButtonEventListeners() {
         if (button.classList == 'clear') {
             button.addEventListener('click', button => {
                 screen.textContent = '0'
+                historyDefault = document.createElement('em')
+                historyDefault.textContent = 'Talb-ulator'
+                history.textContent = ''
+                history.appendChild(historyDefault)
                 operands = []
             })
 
